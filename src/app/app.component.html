@@ -1,1 +1,13 @@
-<mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+<nav mat-tab-nav-bar>
+  <a
+    mat-tab-link
+    *ngFor="let tab of tabs"
+    (click)="activeTab = tab"
+    [active]="activeTab == tab"
+  >
+    {{ tab }}
+  </a>
+  <a mat-tab-link href="https://github.com/loivis" target="_blank">About</a>
+</nav>
+
+<history name="{{ activeTab }}"></history>

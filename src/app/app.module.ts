@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { MatSliderModule } from '@angular/material/slider';
+import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
+import { HistoryComponent } from './history.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatSliderModule],
+  declarations: [AppComponent, HistoryComponent],
+  imports: [BrowserModule, BrowserAnimationsModule, MatTabsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

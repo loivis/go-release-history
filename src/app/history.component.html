@@ -1,0 +1,9 @@
+<h2>{{ release.name }}</h2>
+<div *ngFor="let milestone of release.milestones">
+  <h3>
+    <a href="{{ milestone.link }}" target="_blank"> {{ milestone.name }} </a>
+  </h3>
+  <div *ngFor="let issue of milestone.issues">
+    <a href="{{ issue.link }}" target="_blank">{{ issue.title }} </a>
+  </div>
+</div>
