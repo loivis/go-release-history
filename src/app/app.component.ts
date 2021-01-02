@@ -11,6 +11,6 @@ export interface Tab {
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  tabs = ['Go', 'Gopls', 'Other'];
+  tabs = ['Go', 'Gopls'];
   activeTab = this.tabs[0];
 }
